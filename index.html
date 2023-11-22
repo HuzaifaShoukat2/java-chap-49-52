@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>JavaScript Chap 49 52 Assignment</title>
+   </head>
+  <body>
+    <!-- Question No 1 -->
+    <section class="quest-1">
+      <div class="container" id="formContainer">
+        <form id="signupForm" onsubmit="submitForm(event)">
+          <h1>Question Number 1</h1>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="displayDataContainer">
+        <h2>Form Data:</h2>
+        <div id="displayData"></div>
+        <button id="toggleFormButton" onclick="toggleForm()">Sign Up</button>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section>
+      <div id="content">
+        <h1>Question Number 2</h1>
+        <span> HI This is Huzaifa, </span>
+        <span id="more" class="hidden"
+          >I am a Student At Saylani Mass IT Program Batch 10.
+        </span>
+        <span><a onclick="readMore()" id="readMore">Read More </a></span>
+      </div>
+    </section>
+
+    <!-- Question No 3 -->
+    <section>
+      <div id="studentDataTable">
+        <h1>Question No 3</h1>
+        <h3>Student Data Table</h3>
+
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Father's Name</th>
+              <th>Class</th>
+              <th>Age</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Student data will be added here With the Help Of JavaScript-->
+          </tbody>
+        </table>
+
+        <button onclick="addStudent()" id="addDataBtn">Add Data</button>
+      </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+      </body>
+</html>
