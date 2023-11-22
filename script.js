@@ -70,7 +70,7 @@ function addStudent() {
     cell3.innerHTML = '<input type="text" placeholder="Class">';
     cell4.innerHTML = '<input type="text" placeholder="Age">';
     cell5.innerHTML =
-      '<button onclick="editStudent(this)" id="editbtn">Edit</button> <button onclick="deleteStudent(this)" id="delbtn">Delete</button> <button onclick="checkStudent(this)" id="addBtn">Add</button>';
+      ' <button onclick="deleteStudent(this)" id="delbtn">Delete</button> <button onclick="checkStudent(this)" id="addBtn">Add</button>';
   }
 // For Edit Details Of A student
   function editStudent(button) {
